@@ -1,38 +1,242 @@
-.App {
+.header__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* horizontal alignment */
+  align-items: center; /* for vertical alignment */
+  padding: 10px 50px;
+  height: 80px;
+  background-color: #f3f3f3;
+}
+
+.header__heading__text {
+  font-size: 22px;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.burger__menu__container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4.143px;
+  width: 123px;
+  cursor: pointer;
+}
+
+.burger__menu__container .burger__menu__item {
+  background: #000;
+  height: 4px;
+}
+
+.burger__menu__container .burger__menu__first {
+  width: 29px;
+}
+.burger__menu__container .burger__menu__second {
+  width: 24.857px;
+}
+.burger__menu__container .burger__menu__third {
+  width: 20.714px;
+}
+
+.cart__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  line-height: normal;
+  cursor: default;
+}
+
+.cart__container .cart__image {
+  margin: 0 20px 0 3px;
+  cursor: pointer;
+}
+
+.hero__section__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.hero__section__container {
+  background-color: #f3f3f3;
+  padding: 0 63px 97px 52px;
+}
+
+.hero_section__text__content__first {
+  font-size: 28px;
+}
+.hero_section__text {
+  width: 320px;
+  margin: 152px 0 0;
+}
+
+.hero_section__text__content__second {
+  font-size: 16px;
+  line-height: 162.5%;
+  margin: 15px 0 10px;
+}
+
+.hero_section__text__content__third {
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 50px;
+}
+
+.hero__section__carousal {
+  margin: 211px 63px 0 0;
+}
+
+.hero__section__carousal__img {
+  width: 487px;
+  margin-bottom: 53px;
+}
+
+.carousal__navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousal__navigation span {
+  margin: 0 15px;
+}
+
+.hero__section__extra {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 96px 0 0 98px;
+}
+
+.hero__section__extra img {
+  width: 24px;
+  margin-right: 6px;
+}
+
+.button__container {
+  padding: 10px 52px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 162.5%;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+.button__container:active {
+  background-color: #f6f6f3;
+}
+
+.card__container {
+  position: relative;
+  width: 289px;
+  height: 448px;
+  background-color: #f3f3f3;
+}
+
+.card__container__item {
+  margin: 0 auto;
+}
+
+.card__cart__icon {
+  position: absolute;
+  top: 13px;
+  right: 14px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.card__button {
+  left: 60px;
+  position: absolute;
+  bottom: 24px;
+}
+
+.card__extras {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* justify-content: center; */
+  height: 177px;
+}
+
+.card__extras__heading {
+  position: absolute;
+  top: 0;
+  left: 30px;
+  font-size: 22px;
+  width: 229px;
+  line-height: 118.182%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card__extras__subheading {
+  line-height: 162.5%;
+  position: absolute;
+  width: 100%;
+  bottom: 88px;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.grid__container {
+  display: grid;
+  grid-template-columns: min-content min-content min-content;
+  row-gap: 102px;
+  column-gap: 74px;
+  margin: 102px auto 56px;
+  width: fit-content;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card__image__placeholder {
+  height: 271px;
+  position: absolute;
+  top: 0;
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.grid__container .grid__item {
+  width: fit-content;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main__section__category {
+  font-size: 16px;
+  line-height: 162.5%;
+  margin: 64px auto 0;
+  width: fit-content;
+}
+
+.main__section__category__text {
+  display: inline-block;
+  margin: 0 21px;
+}
+
+body {
+  font-family: Inter;
+}
+
+/* Common classes */
+
+.cross__line {
+  text-decoration: line-through;
+}
+
+.normal__text {
+  color: #000;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.heading__text {
+  color: #000;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.subheading__text {
+  color: #000;
+  font-weight: 500;
 }
